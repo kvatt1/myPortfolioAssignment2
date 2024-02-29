@@ -1,6 +1,7 @@
 :root{
     --theme-color:#acc7f6 ;
     --font-color: #4c42bf;
+    --background-color:rgb(168, 246, 246);
       font-family: 'Times New Roman', Times, serif;
     }
     body{        
@@ -23,7 +24,8 @@
         justify-items: center;
         color: var(--font-color);
         margin-bottom: 1%;
-        justify-content:space-evenly;        
+        justify-content:space-evenly; 
+        background-color:var(--background-color);        
     }
     .profile-img{
         width:200px;
@@ -37,11 +39,21 @@
     }
    .container{
     display: flex;
-    justify-content:space-evenly;
+    flex-wrap: wrap;
     align-items: center;
+    justify-content: space-evenly;
+    gap: 1%;
+   }
+   .projects-experience{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-evenly;
+    gap: 1%;
+    background-color:var(--background-color); 
    }
    section{
-        background-color: rgb(252, 254, 254);
+        background-color:var(--background-color); 
         border-radius: 1%;
         padding: 1%;
     }
